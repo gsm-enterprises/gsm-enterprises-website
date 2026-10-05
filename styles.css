@@ -158,6 +158,10 @@ textarea {
   align-items: center;
   gap: 12px;
   min-width: 0;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 8px 12px 8px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
 }
 
 .brand-mark {
@@ -169,7 +173,7 @@ textarea {
   background: transparent;
   box-shadow: none;
   flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,0.16);
+  border: 2px solid rgba(255,255,255,0.2);
 }
 
 .brand-name {
@@ -804,7 +808,8 @@ textarea {
   }
 
   .brand {
-    gap: 10px;
+    gap: 8px;
+    padding: 6px 10px 6px 6px;
   }
 
   .brand-name,
