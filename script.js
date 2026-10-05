@@ -2,7 +2,7 @@ const products = [
   {
     name: 'Assam Tea CTC BOP',
     category: 'Tea',
-    image: 'BOP,jpeg',
+    image: 'BOP.jpeg',
     price: '₹200 - ₹1000 / kg',
     description: 'Premium Assam tea with rich flavour and strong market demand.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOP.'
@@ -34,7 +34,7 @@ const products = [
   {
     name: 'Assam Tea CTC BOPF',
     category: 'Tea',
-    image: 'BOPL.jpeg',
+    image: 'OF PF.jpeg',
     price: '₹200 - ₹1000 / kg',
     description: 'Strong Assam tea quality for wholesale and regular trade supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPF.'
@@ -48,7 +48,14 @@ const products = [
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC DUST.'
   }
 ];
-
+{
+  name: 'Assam Tea CTC PD',
+  category: 'Tea',
+  image: 'PD.jpeg',
+  price: '₹200 - ₹1000 / kg',
+  description: 'Quality Assam CTC tea suitable for wholesale and commercial supply.',
+  whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC PD.'
+},
 const productGrid = document.getElementById('productGrid');
 
 function renderProducts() {
