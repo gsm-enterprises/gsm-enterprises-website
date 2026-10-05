@@ -46,8 +46,8 @@ const products = [
     price: '₹200 - ₹1000 / kg',
     description: 'Cost-effective Assam tea option for high-volume commercial requirements.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC DUST.'
-  }
-];
+  },
+
 {
   name: 'Assam Tea CTC PD',
   category: 'Tea',
@@ -55,7 +55,8 @@ const products = [
   price: '₹200 - ₹1000 / kg',
   description: 'Quality Assam CTC tea suitable for wholesale and commercial supply.',
   whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC PD.'
-},
+}
+];
 const productGrid = document.getElementById('productGrid');
 
 function renderProducts() {
