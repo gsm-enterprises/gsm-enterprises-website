@@ -433,6 +433,63 @@ textarea {
   color: var(--muted);
 }
 
+.trust-strip {
+  background: linear-gradient(180deg, rgba(255, 250, 244, 0.96), rgba(249, 235, 219, 0.9));
+  padding: 42px 0 0;
+}
+
+.trust-head {
+  margin-bottom: 28px;
+}
+
+.trust-head h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--maroon-900);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  max-width: 760px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px 20px;
+  box-shadow: 0 16px 28px rgba(58, 22, 22, 0.04);
+}
+
+.feature-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(170, 127, 42, 0.12);
+  color: var(--gold-700);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.feature-card h3 {
+  color: var(--maroon-900);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -773,7 +830,8 @@ textarea {
   .about-grid,
   .bulk-grid,
   .contact-grid,
-  .export-grid {
+  .export-grid,
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 
