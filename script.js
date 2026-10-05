@@ -2,48 +2,48 @@ const products = [
   {
     name: 'Assam Tea CTC BOP',
     category: 'Tea',
-    image: 'images/assam-tea-ctc-bop.jpg',
-    price: '₹100 - ₹300 / kg',
+    image: 'BOP,jpeg',
+    price: '₹200 - ₹1000 / kg',
     description: 'Premium Assam tea with rich flavour and strong market demand.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOP.'
   },
   {
     name: 'Assam Tea CTC BOPSM',
     category: 'Tea',
-    image: 'images/assam-tea-ctc-bopsm.jpg',
-    price: '₹150 - ₹400 / kg',
+    image: 'BOPSM.jpeg',
+    price: '₹200 - ₹1000 / kg',
     description: 'Balanced Assam tea suited for regular bulk buyers and retail supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPSM.'
   },
   {
     name: 'Assam Tea CTC BOPL',
     category: 'Tea',
-    image: 'images/assam-tea-ctc-bopl.jpg',
-    price: '₹180 - ₹450 / kg',
+    image: 'BOPL.jpeg',
+    price: '₹200 - ₹1000 / kg',
     description: 'Large leaf Assam tea selected for premium quality and export demand.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPL.'
   },
   {
     name: 'Assam Tea CTC BP',
     category: 'Tea',
-    image: 'images/assam-tea-ctc-bp.jpg',
-    price: '₹120 - ₹350 / kg',
+    image: 'BP.jpeg',
+    price: '₹200 - ₹1000 / kg',
     description: 'A desirable Assam blend for buyers seeking dependable bulk supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BP.'
   },
   {
     name: 'Assam Tea CTC BOPF',
     category: 'Tea',
-    image: 'images/assam-tea-ctc-bopf.jpg',
-    price: '₹170 - ₹500 / kg',
+    image: 'BOPL.jpeg',
+    price: '₹200 - ₹1000 / kg',
     description: 'Strong Assam tea quality for wholesale and regular trade supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPF.'
   },
   {
     name: 'Assam Tea CTC DUST',
     category: 'Tea',
-    image: 'images/assam-tea-ctc-dust.jpg',
-    price: '₹100 - ₹260 / kg',
+    image: 'DUST.jpeg',
+    price: '₹200 - ₹1000 / kg',
     description: 'Cost-effective Assam tea option for high-volume commercial requirements.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC DUST.'
   }
