@@ -32,15 +32,14 @@ const products = [
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BP.'
   },
   {
-    name: 'Assam Tea CTC OF  PF',
+    name: 'Assam Tea CTC OF PF',
     category: 'Tea',
     image: 'OF  PF.jpeg',
     price: '₹200 - ₹1000 / kg',
     description: 'Strong Assam tea quality for wholesale and regular trade supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPF.'
   },
-  
- {
+  {
     name: 'Assam Tea CTC DUST',
     category: 'Tea',
     image: 'DUST.jpeg',
@@ -48,16 +47,16 @@ const products = [
     description: 'Cost-effective Assam tea option for high-volume commercial requirements.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC DUST.'
   },
-
-{
-  name: 'Assam Tea CTC PD',
-  category: 'Tea',
-  image: 'PD.jpeg',
-  price: '₹200 - ₹1000 / kg',
-  description: 'Quality Assam CTC tea suitable for wholesale and commercial supply.',
-  whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC PD.'
- }
+  {
+    name: 'Assam Tea CTC PD',
+    category: 'Tea',
+    image: 'PD.jpeg',
+    price: '₹200 - ₹1000 / kg',
+    description: 'Quality Assam CTC tea suitable for wholesale and commercial supply.',
+    whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC PD.'
+  }
 ];
+
 const productGrid = document.getElementById('productGrid');
 
 function renderProducts() {
@@ -68,6 +67,7 @@ function renderProducts() {
       (product) => `
         <article class="product-card">
           <img src="${product.image}" alt="${product.name}" />
+          <div class="product-body">
             <span class="product-badge">${product.category}</span>
             <h3>${product.name}</h3>
             <p>${product.description}</p>
@@ -100,6 +100,10 @@ const navLinks = document.querySelector('.nav-links');
 if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+  });
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 }
 

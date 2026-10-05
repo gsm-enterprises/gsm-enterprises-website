@@ -31,6 +31,7 @@ body {
     linear-gradient(180deg, #f6efe9 0%, #fffaf6 100%);
   color: var(--ink);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -252,21 +253,36 @@ textarea {
 .hero {
   position: relative;
   background:
-    url("gsm-hero-banner.jpeg") center top / 100% auto no-repeat;
+    linear-gradient(90deg, rgba(22, 9, 9, 0.76), rgba(22, 9, 9, 0.42)),
+    url("gsm-hero-banner.jpeg") center top / cover no-repeat;
   background-color: #ffffff;
   color: var(--white);
   padding: 0;
-  min-height: 0;
+  min-height: 670px;
   overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(35, 18, 18, 0.12), rgba(25, 12, 12, 0.48));
+  pointer-events: none;
 }
 
 .hero-grid {
   position: relative;
   z-index: 1;
-  display: none;
+  display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 48px;
   align-items: center;
+  min-height: 670px;
+  padding: 96px 0 74px;
+}
+
+.hero-content {
+  max-width: 620px;
 }
 
 .hero-content h1 {
@@ -472,6 +488,8 @@ textarea {
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   background: rgba(255,255,255,0.8);
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -490,9 +508,13 @@ textarea {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  border-bottom: 1px solid var(--line);
 }
 
 .product-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 18px 18px 20px;
 }
 
@@ -507,6 +529,7 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  width: fit-content;
 }
 
 .product-card h3 {
@@ -526,6 +549,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  margin-top: auto;
 }
 
 .product-price {
@@ -538,6 +562,11 @@ textarea {
   color: var(--gold-700);
   font-weight: 700;
   font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.product-enquire:hover {
+  opacity: 0.8;
 }
 
 .bulk-grid {
@@ -789,6 +818,11 @@ textarea {
   }
 
   .hero {
+    min-height: 560px;
+  }
+
+  .hero-grid {
+    min-height: 560px;
     padding-top: 72px;
   }
 
