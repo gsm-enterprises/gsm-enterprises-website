@@ -32,9 +32,9 @@ const products = [
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BP.'
   },
   {
-    name: 'Assam Tea CTC BOPF',
+    name: 'Assam Tea CTC OFPF',
     category: 'Tea',
-    image: 'BOPF.jpeg',
+    image: 'OFPF.jpeg',
     price: '₹200 - ₹1000 / kg',
     description: 'Strong Assam tea quality for wholesale and regular trade supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPF.'
