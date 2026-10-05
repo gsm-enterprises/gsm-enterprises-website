@@ -239,25 +239,21 @@ textarea {
 .hero {
   position: relative;
   background:
-    linear-gradient(135deg, rgba(35, 15, 15, 0.94), rgba(81, 30, 30, 0.86)),
-    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1500&q=80") center/cover no-repeat;
+   
+   url("gsm-hero-banner.jpeg") center/cover no-repeat;
   color: var(--white);
-  padding: 96px 0 82px;
+  padding: 0;
+min-height: 520px;
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(215,182,109,0.18), transparent 26%);
-  pointer-events: none;
+
 }
 
 .hero-grid {
   position: relative;
   z-index: 1;
-  display: grid;
+  display: none;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 48px;
   align-items: center;
