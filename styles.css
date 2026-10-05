@@ -156,18 +156,19 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   min-width: 0;
   background: rgba(255, 255, 255, 0.96);
   padding: 10px 16px 10px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.3);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  margin: 6px 0;
 }
 
 .brand-mark {
-  width: 78px;
-  height: 78px;
+  width: 82px;
+  height: 82px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
@@ -179,17 +180,19 @@ textarea {
 
 .brand-name {
   display: block;
-  font-size: 1.15rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   font-weight: 800;
   color: #2b1212;
   letter-spacing: 0.04em;
+  line-height: 1.1;
 }
 
 .brand-tag {
   display: block;
-  font-size: 0.73rem;
+  font-size: 0.72rem;
   color: rgba(43, 18, 18, 0.75);
   letter-spacing: 0.06em;
+  line-height: 1.2;
 }
 
 .nav-links {
