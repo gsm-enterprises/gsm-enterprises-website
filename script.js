@@ -39,7 +39,8 @@ const products = [
     description: 'Strong Assam tea quality for wholesale and regular trade supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPF.'
   },
-  {
+  
+ {
     name: 'Assam Tea CTC DUST',
     category: 'Tea',
     image: 'DUST.jpeg',
@@ -55,7 +56,7 @@ const products = [
   price: '₹200 - ₹1000 / kg',
   description: 'Quality Assam CTC tea suitable for wholesale and commercial supply.',
   whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC PD.'
-}
+ }
 ];
 const productGrid = document.getElementById('productGrid');
 
@@ -66,8 +67,7 @@ function renderProducts() {
     .map(
       (product) => `
         <article class="product-card">
-          <img src="${product.image}" alt="${product.name}" onerror="this.src='https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80';" />
-          <div class="product-body">
+          <img src="${product.image}" alt="${product.name}" />
             <span class="product-badge">${product.category}</span>
             <h3>${product.name}</h3>
             <p>${product.description}</p>
