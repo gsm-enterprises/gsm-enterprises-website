@@ -158,28 +158,28 @@ textarea {
   align-items: center;
   gap: 14px;
   min-width: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   padding: 10px 16px 10px 10px;
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .brand-mark {
-  width: 72px;
-  height: 72px;
+  width: 78px;
+  height: 78px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
   background: transparent;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
   flex-shrink: 0;
-  border: 2px solid rgba(215, 182, 109, 0.3);
+  border: 2px solid rgba(215, 182, 109, 0.35);
 }
 
 .brand-name {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: #2b1212;
   letter-spacing: 0.04em;
@@ -187,8 +187,8 @@ textarea {
 
 .brand-tag {
   display: block;
-  font-size: 0.72rem;
-  color: rgba(43, 18, 18, 0.7);
+  font-size: 0.73rem;
+  color: rgba(43, 18, 18, 0.75);
   letter-spacing: 0.06em;
 }
 
@@ -811,6 +811,7 @@ textarea {
   .brand {
     gap: 8px;
     padding: 8px 12px 8px 8px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.12);
   }
 
   .brand-mark {
