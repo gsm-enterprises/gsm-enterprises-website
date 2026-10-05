@@ -239,10 +239,11 @@ textarea {
   position: relative;
   background:
    
-   url("gsm-hero-banner.jpeg") center/cover no-repeat;
+     url("gsm-hero-banner.jpeg") center top / 100% auto no-repeat;
+background-color: #ffffff
   color: var(--white);
   padding: 0;
-min-height: 520px;
+min-height: 0;
   overflow: hidden;
 }
 
