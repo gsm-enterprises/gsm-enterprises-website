@@ -162,14 +162,14 @@ textarea {
 
 .brand-mark {
   width: clamp(46px, 5vw, 62px);
-  height: auto;
-  max-height: 62px;
-  object-fit: contain;
+  height: clamp(46px, 5vw, 62px);
+  object-fit: cover;
   border-radius: 50%;
   display: block;
   background: transparent;
   box-shadow: none;
   flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.16);
 }
 
 .brand-name {
