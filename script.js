@@ -34,7 +34,7 @@ const products = [
   {
     name: 'Assam Tea CTC OFPF',
     category: 'Tea',
-    image: 'OFPF.jpeg',
+    image: 'OF PF.jpeg',
     price: '₹200 - ₹1000 / kg',
     description: 'Strong Assam tea quality for wholesale and regular trade supply.',
     whatsappText: 'Hello GSM ENTERPRISES, I want to enquire about Assam Tea CTC BOPF.'
