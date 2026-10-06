@@ -264,7 +264,7 @@ textarea {
   background-color: #ffffff;
   color: var(--white);
   padding: 0;
-  min-height: 200px;
+  min-height: 360px;
   overflow: hidden;
 }
 
