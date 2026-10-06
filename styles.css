@@ -955,3 +955,6 @@ textarea {
     align-items: flex-start;
   }
 }
+hero-content h1 {
+  font-size: 32px !important;
+}
