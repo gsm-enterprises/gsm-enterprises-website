@@ -1277,6 +1277,67 @@ body {
   filter: drop-shadow(0 12px 0 rgba(10, 25, 41, 0.12)) drop-shadow(0 26px 32px rgba(10, 25, 41, 0.22));
 }
 
+.stat,
+.feature-card,
+.value-card,
+.product-card,
+.export-card,
+.form-card,
+.contact-info,
+.map-box {
+  border: 1px solid rgba(10, 25, 41, 0.14);
+  border-bottom: 6px solid rgba(170, 127, 42, 0.72);
+  background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.94) 52%, rgba(244, 235, 219, 0.92) 100%);
+  box-shadow:
+    0 8px 0 rgba(10, 25, 41, 0.16),
+    0 24px 38px rgba(10, 25, 41, 0.18),
+    inset 0 2px 0 rgba(255, 255, 255, 1);
+}
+
+.stat,
+.feature-card,
+.value-card,
+.export-card,
+.contact-info {
+  transform: perspective(900px) rotateX(3deg);
+}
+
+.product-card {
+  transform: perspective(900px) rotateX(2.5deg);
+}
+
+.form-card,
+.map-box {
+  border-bottom-width: 8px;
+  box-shadow:
+    0 10px 0 rgba(10, 25, 41, 0.16),
+    0 28px 44px rgba(10, 25, 41, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 1);
+}
+
+.btn,
+.btn-primary {
+  border-bottom: 5px solid rgba(120, 83, 20, 0.72);
+  box-shadow:
+    0 7px 0 rgba(10, 25, 41, 0.16),
+    0 18px 28px rgba(10, 25, 41, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.65);
+}
+
+.btn-secondary {
+  border-bottom-color: rgba(10, 25, 41, 0.38);
+}
+
+.hero-image {
+  border: 2px solid rgba(201, 157, 66, 0.58);
+  border-radius: 18px;
+  transform: perspective(1400px) rotateX(2deg);
+  box-shadow:
+    0 10px 0 rgba(10, 25, 41, 0.12),
+    0 28px 44px rgba(10, 25, 41, 0.22),
+    inset 0 2px 0 rgba(255, 255, 255, 0.8);
+}
+
 @media (hover: hover) {
   .stat:hover,
   .feature-card:hover,
@@ -1285,9 +1346,10 @@ body {
   .export-card:hover,
   .contact-info:hover {
     transform: perspective(900px) translateY(-10px) rotateX(4deg);
+    border-bottom-color: rgba(201, 157, 66, 0.92);
     box-shadow:
-      0 10px 0 rgba(10, 25, 41, 0.16),
-      0 32px 48px rgba(10, 25, 41, 0.22),
+      0 12px 0 rgba(10, 25, 41, 0.16),
+      0 34px 52px rgba(10, 25, 41, 0.23),
       inset 0 2px 0 rgba(255, 255, 255, 1);
   }
 
