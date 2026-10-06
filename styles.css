@@ -891,7 +891,11 @@ textarea {
   .nav-links.open {
     display: flex;
   }
-
+.hero-title {
+  font-size: 42px !important;
+  line-height: 1.1 !important;
+  margin: 0 !important;
+}
   .stats-grid,
   .values,
   .product-grid {
