@@ -170,7 +170,7 @@ textarea {
 .brand-mark {
   width: 120px;
   height: 120px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   border-radius: 50%;
   background: #fff;
