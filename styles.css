@@ -1237,3 +1237,73 @@ body {
       inset 0 1px 0 rgba(255, 255, 255, 0.98);
   }
 }
+
+/* Keep the depth apparent on the first view, including touch devices. */
+.stat,
+.feature-card,
+.value-card,
+.product-card,
+.export-card,
+.form-card,
+.contact-info,
+.map-box {
+  box-shadow:
+    0 7px 0 rgba(10, 25, 41, 0.16),
+    0 20px 34px rgba(10, 25, 41, 0.16),
+    inset 0 2px 0 rgba(255, 255, 255, 1);
+}
+
+.stat,
+.feature-card,
+.value-card,
+.export-card,
+.contact-info {
+  transform: perspective(1100px) rotateX(1.2deg);
+}
+
+.product-card {
+  transform: perspective(1100px) rotateX(1deg);
+}
+
+.btn,
+.btn-primary {
+  box-shadow:
+    0 6px 0 rgba(120, 83, 20, 0.45),
+    0 16px 26px rgba(10, 25, 41, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.6);
+}
+
+.hero-image {
+  filter: drop-shadow(0 12px 0 rgba(10, 25, 41, 0.12)) drop-shadow(0 26px 32px rgba(10, 25, 41, 0.22));
+}
+
+@media (hover: hover) {
+  .stat:hover,
+  .feature-card:hover,
+  .value-card:hover,
+  .product-card:hover,
+  .export-card:hover,
+  .contact-info:hover {
+    transform: perspective(900px) translateY(-10px) rotateX(4deg);
+    box-shadow:
+      0 10px 0 rgba(10, 25, 41, 0.16),
+      0 32px 48px rgba(10, 25, 41, 0.22),
+      inset 0 2px 0 rgba(255, 255, 255, 1);
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: translateY(-6px);
+  }
+}
+
+@media (hover: none) {
+  .stat,
+  .feature-card,
+  .value-card,
+  .product-card,
+  .export-card,
+  .contact-info {
+    transform: perspective(1100px) rotateX(0.6deg);
+  }
+}
