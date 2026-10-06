@@ -160,7 +160,7 @@ textarea {
   gap: 12px;
   min-width: 0;
   background: rgba(255, 255, 255, 0.96);
-  padding: 10px 16px 10px 10px;
+  padding: 8px 16px 8px 8px;
   border-radius: 999px;
   border: 1px solid rgba(215, 182, 109, 0.3);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
@@ -168,8 +168,8 @@ textarea {
 }
 
 .brand-mark {
-  width: 104px;
-  height: 104px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   display: block;
   border-radius: 50%;
@@ -845,12 +845,12 @@ textarea {
 
   .brand {
     gap: 8px;
-    padding: 8px 12px 8px 8px;
+    padding: 6px 12px 6px 6px;
   }
 
   .brand-mark {
-    width: 73px;
-    height: 73px;
+    width: 80px;
+    height: 80px;
   }
 
   .brand-name,
