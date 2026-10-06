@@ -258,9 +258,10 @@ textarea {
 
 .hero {
   position: relative;
-  background:
-    linear-gradient(90deg, rgba(10, 25, 41, 0.68), rgba(10, 25, 41, 0.34)),
-    url("gsm-hero-banner.jpeg") center top / cover no-repeat;
+  background-image: linear-gradient(90deg, rgba(10, 25, 41, 0.68), rgba(10, 25, 41, 0.34)), url("gsm-hero-banner.jpeg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #ffffff;
   color: var(--white);
   padding: 0;
@@ -891,11 +892,13 @@ textarea {
   .nav-links.open {
     display: flex;
   }
-.hero-title {
-  font-size: 42px !important;
-  line-height: 1.1 !important;
-  margin: 0 !important;
-}
+
+  .hero-title {
+    font-size: 42px !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+  }
+
   .stats-grid,
   .values,
   .product-grid {
@@ -958,7 +961,8 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
   }
-}
-hero-content h1 {
-  font-size: 32px !important;
+
+  .hero-content h1 {
+    font-size: 32px !important;
+  }
 }
