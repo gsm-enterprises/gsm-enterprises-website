@@ -525,6 +525,10 @@ textarea {
   border-bottom: 1px solid rgba(10, 25, 41, 0.08);
 }
 
+.product-card img.luxury-watch-image {
+  object-position: top;
+}
+
 .product-body {
   display: flex;
   flex: 1;

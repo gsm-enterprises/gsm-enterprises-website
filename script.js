@@ -61,7 +61,13 @@ const luxuryWatches = [
   { name: 'Luxury Automatic Watch', category: 'Luxury Watches', description: 'Imported premium automatic watch with stainless steel finish.' },
   { name: 'Luxury Chronograph Watch', category: 'Luxury Watches', description: 'Imported chronograph watch with sapphire-style glass and premium strap.' },
   { name: 'Luxury Gold-Tone Watch', category: 'Luxury Watches', description: 'Imported gold-tone dress watch for gifting and premium retail.' },
-  { name: 'Luxury Ladies Watch', category: 'Luxury Watches', description: 'Imported elegant ladies watch with refined detailing.' }
+  { name: 'Luxury Ladies Watch', category: 'Luxury Watches', description: 'Imported elegant ladies watch with refined detailing.' },
+  {
+    name: 'G-Shock G-Steel GM110BB-1A',
+    category: 'Luxury Watches',
+    image: 'https://github.com/user-attachments/assets/35533b5b-ac1b-48cb-9655-e0f1cb26d02a',
+    description: 'Blackout Beast Mode with shock-resistant construction, 200 m water resistance and dual analog-digital display.'
+  }
 ];
 
 const luxuryWatchGrid = document.getElementById('luxuryWatchGrid');
@@ -74,6 +80,7 @@ function renderLuxuryWatches() {
       const text = `Hello GSM ENTERPRISES, I want to enquire about ${watch.name}.`;
       return `
         <article class="product-card">
+          ${watch.image ? `<img class="luxury-watch-image" src="${watch.image}" alt="${watch.name}" />` : ''}
           <div class="product-body">
             <span class="product-badge">${watch.category}</span>
             <h3>${watch.name}</h3>
