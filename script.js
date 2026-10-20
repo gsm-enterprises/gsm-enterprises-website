@@ -57,6 +57,45 @@ const products = [
   }
 ];
 
+const luxuryWatches = [
+  { name: 'Luxury Automatic Watch', category: 'Luxury Watches', description: 'Imported premium automatic watch with stainless steel finish.' },
+  { name: 'Luxury Chronograph Watch', category: 'Luxury Watches', description: 'Imported chronograph watch with sapphire-style glass and premium strap.' },
+  { name: 'Luxury Gold-Tone Watch', category: 'Luxury Watches', description: 'Imported gold-tone dress watch for gifting and premium retail.' },
+  { name: 'Luxury Ladies Watch', category: 'Luxury Watches', description: 'Imported elegant ladies watch with refined detailing.' }
+];
+
+const luxuryWatchGrid = document.getElementById('luxuryWatchGrid');
+
+function renderLuxuryWatches() {
+  if (!luxuryWatchGrid) return;
+
+  luxuryWatchGrid.innerHTML = luxuryWatches
+    .map((watch) => {
+      const text = `Hello GSM ENTERPRISES, I want to enquire about ${watch.name}.`;
+      return `
+        <article class="product-card">
+          <div class="product-body">
+            <span class="product-badge">${watch.category}</span>
+            <h3>${watch.name}</h3>
+            <p>${watch.description}</p>
+            <div class="product-meta">
+              <span class="product-price">Price on enquiry</span>
+              <a
+                href="https://wa.me/919864068136?text=${encodeURIComponent(text)}"
+                class="product-enquire"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Enquire
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+    })
+    .join('');
+}
+
 const productGrid = document.getElementById('productGrid');
 
 function renderProducts() {
@@ -123,3 +162,4 @@ if (bulkForm) {
 }
 
 renderProducts();
+renderLuxuryWatches();
