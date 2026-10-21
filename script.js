@@ -58,6 +58,30 @@ const products = [
 ];
 
 const luxuryWatches = [
+  {
+    name: 'Imported Watch - Classic',
+    category: 'Luxury Watches',
+    image: 'watch-1.jpg.jpg',
+    description: 'Imported watch available on enquiry for wholesale and premium buyers.'
+  },
+  {
+    name: 'Imported Watch - Silver Dial',
+    category: 'Luxury Watches',
+    image: 'watch-1.jpg.jpg',
+    description: 'Elegant silver-dial imported watch designed for premium retail display.'
+  },
+  {
+    name: 'Imported Watch - Black Edition',
+    category: 'Luxury Watches',
+    image: 'watch-1.jpg.jpg',
+    description: 'Modern black-finish imported watch suited for trend-focused buyers.'
+  },
+  {
+    name: 'Imported Watch - Executive Style',
+    category: 'Luxury Watches',
+    image: 'watch-1.jpg.jpg',
+    description: 'Executive-style imported watch ideal for gifting and formal collections.'
+  },
   { name: 'Luxury Automatic Watch', category: 'Luxury Watches', description: 'Imported premium automatic watch with stainless steel finish.' },
   { name: 'Luxury Chronograph Watch', category: 'Luxury Watches', description: 'Imported chronograph watch with sapphire-style glass and premium strap.' },
   { name: 'Luxury Gold-Tone Watch', category: 'Luxury Watches', description: 'Imported gold-tone dress watch for gifting and premium retail.' },
