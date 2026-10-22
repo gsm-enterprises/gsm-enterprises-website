@@ -59,37 +59,10 @@ const products = [
 
 const luxuryWatches = [
   {
-    name: 'Imported Watch - Classic',
-    category: 'Luxury Watches',
-    image: 'watch-1.jpg.jpg',
-    description: 'Imported watch available on enquiry for wholesale and premium buyers.'
-  },
-  {
-    name: 'Imported Watch - Silver Dial',
-    category: 'Luxury Watches',
-    image: 'watch-1.jpg.jpg',
-    description: 'Elegant silver-dial imported watch designed for premium retail display.'
-  },
-  {
-    name: 'Imported Watch - Black Edition',
-    category: 'Luxury Watches',
-    image: 'watch-1.jpg.jpg',
-    description: 'Modern black-finish imported watch suited for trend-focused buyers.'
-  },
-  {
-    name: 'Imported Watch - Executive Style',
-    category: 'Luxury Watches',
-    image: 'watch-1.jpg.jpg',
-    description: 'Executive-style imported watch ideal for gifting and formal collections.'
-  },
-  { name: 'Luxury Automatic Watch', category: 'Luxury Watches', description: 'Imported premium automatic watch with stainless steel finish.' },
-  { name: 'Luxury Chronograph Watch', category: 'Luxury Watches', description: 'Imported chronograph watch with sapphire-style glass and premium strap.' },
-  { name: 'Luxury Gold-Tone Watch', category: 'Luxury Watches', description: 'Imported gold-tone dress watch for gifting and premium retail.' },
-  { name: 'Luxury Ladies Watch', category: 'Luxury Watches', description: 'Imported elegant ladies watch with refined detailing.' },
-  {
     name: 'G-Shock G-Steel GM110BB-1A',
     category: 'Luxury Watches',
     image: 'G-shock.jpeg',
+    price: 'MRP ₹8400',
     description: 'Blackout Beast Mode with shock-resistant construction, 200 m water resistance and dual analog-digital display.'
   }
 ];
@@ -110,7 +83,7 @@ function renderLuxuryWatches() {
             <h3>${watch.name}</h3>
             <p>${watch.description}</p>
             <div class="product-meta">
-              <span class="product-price">Price on enquiry</span>
+              <span class="product-price">${watch.price || 'Price on enquiry'}</span>
               <a
                 href="https://wa.me/919864068136?text=${encodeURIComponent(text)}"
                 class="product-enquire"
