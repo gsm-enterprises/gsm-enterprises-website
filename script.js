@@ -89,7 +89,7 @@ const luxuryWatches = [
   {
     name: 'G-Shock G-Steel GM110BB-1A',
     category: 'Luxury Watches',
-    image: 'https://github.com/user-attachments/assets/35533b5b-ac1b-48cb-9655-e0f1cb26d02a',
+    image: 'G-shock.jpeg',
     description: 'Blackout Beast Mode with shock-resistant construction, 200 m water resistance and dual analog-digital display.'
   }
 ];
